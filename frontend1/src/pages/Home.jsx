@@ -1,4 +1,5 @@
-import './Home.css'
+import './Home.css';
+import Hero from './Hero.jsx';
 
 function Home() {
   const learningPaths = [
@@ -20,10 +21,11 @@ function Home() {
       duration: '5 months',
       level: 'Beginner to Intermediate'
     }
-  ]
+  ];
 
   return (
     <div className="home">
+      <Hero />
       <h1 className="section-title">Learning Paths</h1>
       <div className="learning-paths">
         {learningPaths.map((path, index) => (
@@ -39,7 +41,7 @@ function Home() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Home 
+export default Home;
