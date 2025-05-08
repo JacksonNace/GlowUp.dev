@@ -1,48 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-.hero {
+.Summary {
   position: relative;
-  height: 100vh; /* Ensures the hero section takes up the full viewport height */
+  background-color: #9989EB;
   width: 100%; /* Ensures the hero section spans the full width */
-  background: url('./herobg.png') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Keeps the content at the top */
   align-items: center; /* Centers content horizontally */
   text-align: center;
-  color: white;
-  padding: 2rem; /* Adds space inside the hero section */
+  color: rgb(0, 0, 0);
   box-sizing: border-box; /* Ensures padding doesn't affect layout */
 }
 
-.hero h1 {
+.Sum h1 {
   font-family: "Cal Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-    font-size: 7rem;
+    font-size: 4rem;
   margin-bottom: 0.5rem; /* Reduced space between h1 and p */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.hero p {
-  font-family: 'Montserrat', sans-serif; /* Apply Cal Sans font */
+.Sum p {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
-  max-width: 600px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  margin-top: 0; /* Ensures no extra space above the p tag */
+  max-width: 60%;
+  text-align: center;
+  margin-top: 0;
+  margin-left: auto;   /* These two lines center the p element itself */
+  margin-right: auto;
 }
+.about-image {
+  margin-top: 2rem;
+  max-width: 30%;
+  height: auto;
+  border-radius: 1rem;
+}
+
 
 @media (max-width: 768px) {
-  .hero h1 {
+  .Sum h1 {
     font-size: 2.25rem;
   }
 
-  .hero p {
+  .Sum p {
     font-size: 1.25rem;
   }
-}
-
-/* Added margin to lower the text a little */
-.hero > * {
-  margin-top: 20vh; /* Adjust this value to move the text lower */
 }
